@@ -31,7 +31,7 @@ const Footer = () => {
               href="https://instagram.com/brahmatechnologies?igshid=MDE2OWE1N2Q="
               target="true"
             >
-              <FiInstagram />
+              <FiInstagram size={18} />
             </a>
           </span>
           <span className="lk">
@@ -39,7 +39,7 @@ const Footer = () => {
               href="https://www.linkedin.com/in/brahma-technologies-5b9b64192/"
               target="true"
             >
-              <BsLinkedin />
+              <BsLinkedin size={18} />
             </a>
           </span>
         </div>

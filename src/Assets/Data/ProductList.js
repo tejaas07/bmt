@@ -6,7 +6,11 @@ import P4 from "../Images/Products/P4.jpg";
 const ProductList = [
   { productName: "Office wired Call Bell System", img: P1 },
   { productName: "Hospital Wired Call Bell System", img: P2 },
-  { productName: "Patient wired Call Bell System", img: P3 },
+  {
+    productName: "Patient wired Call Bell System",
+    desc: "(Reset at Patient End)",
+    img: P3,
+  },
   { productName: "Hotel Wired Call Bell System", img: P4 },
 ];
 

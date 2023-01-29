@@ -24,6 +24,8 @@ const Home = () => {
             <div className="carl">
               <div className="caroulsalText">
                 {val.productName}
+                <br />
+                {val.desc}
                 <div>
                   <Button
                     className="navButton"
@@ -43,14 +45,21 @@ const Home = () => {
       <div>
         <div className="CompanyName">Brahma Technologies India</div>
         <p className="desc">
-          We would like to introduce ourself (Brahma Technologies India) as a
-          Manufacturer of Patient Nurse Call Bell System, the product has been
-          designed by Brahma Technologies after intense research done on the
-          existing Call Bell Systems available in the market. We have been in
-          the market since last decade.
+          Established in 2006, BRAHMA TECHNOLOGIES (INDIA) has made a name for
+          itself in the list of top manufacture suppliers of call bell system in
+          India. The supplier and manufacturing company is located in Mumbai,
+          Maharashtra and is one of the leading sellers of listed products.
           <br />
-          We are serving Hospitals across Mumbai & Other Places with no
-          registered complaints with the technology till date.
+          BRAHMA TECHNOLOGIES (INDIA) The product has been designed by our own
+          R&D team after intense research done on existing call bell system
+          available in market.
+          <br />
+          BRAHMA TECHNOLOGIES (INDIA) are being in the market since last
+          decades, we are serving the hospitals and guest houses across the
+          India with no registered complaints with the technology of our call
+          bell system till date, we are confident that after going through our
+          product would surely give us an opportunity to give you a
+          demonstration of our system.
         </p>
       </div>
       {/* <div

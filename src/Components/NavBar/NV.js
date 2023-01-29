@@ -49,32 +49,10 @@ const NV = () => {
             }
             id="navbarText"
           >
-            {/* <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
-                  Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Features
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Pricing
-                </a>
-              </li>
-            </ul> */}
             <div
               class="navbar-nav nc ms-auto"
               // className="nc"
-              style={
-                {
-                  // width: "100%",
-                  // textAlign: "center",
-                }
-              }
+              style={{}}
             >
               <ul
                 class="navbar-nav me-auto mb-2 mb-lg-0"
@@ -89,7 +67,7 @@ const NV = () => {
                     textAlign: "center",
                   }}
                 >
-                  <BsFillHouseDoorFill />
+                  <BsFillHouseDoorFill className="icn" />
 
                   <Link
                     class="nav-link active"
@@ -102,7 +80,7 @@ const NV = () => {
                   </Link>
                 </li>
                 <li>
-                  <BsFillPhoneFill />
+                  <BsFillPhoneFill className="icn" />
                   <Link
                     class="nav-link active"
                     style={{ paddingTop: "1px" }}
@@ -114,7 +92,7 @@ const NV = () => {
                   </Link>
                 </li>
                 <li>
-                  <BsInfoCircleFill />
+                  <BsInfoCircleFill className="icn" />
                   <Link
                     class="nav-link active"
                     style={{ paddingTop: "1px" }}
@@ -126,7 +104,7 @@ const NV = () => {
                   </Link>
                 </li>
                 <li>
-                  <BsTelephoneFill />
+                  <BsTelephoneFill className="icn" />
                   <Link
                     class="nav-link active"
                     style={{ paddingTop: "1px" }}
