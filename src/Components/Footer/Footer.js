@@ -1,20 +1,10 @@
 import React from "react";
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-} from "reactstrap";
 import Logo from "../../Assets/Images/brahma log.png";
 import "./Footer.css";
 import { BsLinkedin } from "react-icons/bs";
 import { FiInstagram } from "react-icons/fi";
 import { FaRegCopyright } from "react-icons/fa";
 
-import { createStyles, Anchor, Group, ActionIcon } from "@mantine/core";
 const Footer = () => {
   return (
     <div
