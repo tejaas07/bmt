@@ -41,7 +41,7 @@ const Home = () => {
         ))}
       </Carousel>
       <div>
-        <div className="CompanyName">Brahma Technologies</div>
+        <div className="CompanyName">Brahma Technologies India</div>
         <p className="desc">
           We would like to introduce ourself (Brahma Technologies India) as a
           Manufacturer of Patient Nurse Call Bell System, the product has been

@@ -3,7 +3,7 @@ import Cliens from "../../Assets/Data/ClientList";
 import { Container } from "@mantine/core";
 import { Table } from "@mantine/core";
 import "./AboutUs.css";
-
+import TopClient from "../../Assets/Data/MainClient";
 const AboutUs = () => {
   return (
     <Container className="container">
@@ -23,13 +23,11 @@ const AboutUs = () => {
         </p>
         <div className="header">Our Clients</div>
         <div className="clientImage">
-          <img src="" alt="img" />
-          <img src="" alt="img" />
-          <img src="" alt="img" />
-          <img src="" alt="img" />
-          <img src="" alt="img" />
-          <img src="" alt="img" />
-          <img src="" alt="img" />
+          {TopClient.map((val, i) => (
+            <div className="listContainer">
+              <img src={val.img} alt="" />
+            </div>
+          ))}
         </div>
         <Table
           style={{ margin: "auto", marginBottom: "3%" }}
