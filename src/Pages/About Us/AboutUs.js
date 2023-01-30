@@ -46,7 +46,7 @@ const AboutUs = () => {
             {Cliens.map((val, i) => (
               <tr>
                 <td style={{ alignItems: "center" }}>{val.client}</td>
-                <td>{val.location}</td>
+                <td>{val.address}</td>
               </tr>
             ))}
           </tbody>

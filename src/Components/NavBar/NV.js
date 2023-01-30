@@ -17,16 +17,7 @@ const NV = () => {
       <nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-end">
         <div class="container-fluid">
           <img alt="logo" src={Logo} className="logoImg" style={{}} />
-          <a
-            class="navbar-brand"
-            // style={{
-            //   color: "#6b3636",
-            //   fontWeight: 600,
-            //   fontSize: "33px",
-            //   marginLeft: "10px",
-            // }}
-            href="#"
-          >
+          <a class="navbar-brand" href="#">
             Brahma Technologies (India)
           </a>
           <button
@@ -59,11 +50,12 @@ const NV = () => {
                 style={{
                   width: "100%",
                   textAlign: "center",
+                  fontSize: "19px",
+                  fontWeight: "500",
                 }}
               >
                 <li
                   style={{
-                    // width: "100%",
                     textAlign: "center",
                   }}
                 >
@@ -75,6 +67,7 @@ const NV = () => {
                     aria-current="page"
                     href="#"
                     to="/"
+                    // data-bs-toggle="collapse"
                   >
                     Home
                   </Link>

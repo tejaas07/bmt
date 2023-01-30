@@ -25,7 +25,13 @@ const Products = () => {
   return (
     <div className="header" id="products">
       <Container className="container">
-        Our Products
+        <div
+          style={{
+            fontSize: "32px",
+          }}
+        >
+          Our Products
+        </div>
         <div
           style={{
             display: "flex",
@@ -37,7 +43,56 @@ const Products = () => {
         >
           {ProductList.map((val, i) => (
             <div className="card">
-              <Card shadow="sm" p="lg" radius="md" withBorder>
+              <span className="Img">
+                <img
+                  src={val.img}
+                  // height={300}
+                  className="productImg"
+                  alt="Norway"
+                />
+              </span>
+              <span className="text">
+                <div className="prodName">
+                  <Text weight={500}>{val.productName}</Text>
+                </div>
+                <div className="prodDesc">
+                  <p>{val.description}</p>
+                </div>
+                <Button
+                  variant="light"
+                  color="blue"
+                  style={{
+                    width: "50%",
+                    color: "blue",
+                    fontSize: "16px",
+                  }}
+                  mt="md"
+                  radius="md"
+                  onClick={() => {
+                    setShowForm(true);
+                  }}
+                >
+                  Get Quote
+                </Button>
+              </span>
+            </div>
+          ))}
+        </div>
+        {showForm ? (
+          <Modal size="md" opened={formOpener} onClose={() => formHider()}>
+            <Form hide={formHider} />
+          </Modal>
+        ) : (
+          ""
+        )}
+      </Container>
+    </div>
+  );
+};
+
+export default Products;
+{
+  /* <Card shadow="sm" p="lg" radius="md" withBorder>
                 <Card.Section>
                   <img
                     src={val.img}
@@ -63,38 +118,5 @@ const Products = () => {
                 >
                   Get Quote
                 </Button>
-              </Card>
-              {/* <Card
-                style={{
-                  width: "18rem",
-                }}
-              >
-                <img alt="Sample" src="https://picsum.photos/300/200" />
-                <CardBody>
-                  <CardTitle tag="h5">Card title</CardTitle>
-                  <CardSubtitle className="mb-2 text-muted" tag="h6">
-                    Card subtitle
-                  </CardSubtitle>
-                  <CardText>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card‘s content.
-                  </CardText>
-                  <Button>Button</Button>
-                </CardBody>
-              </Card> */}
-            </div>
-          ))}
-        </div>
-        {showForm ? (
-          <Modal size="md" opened={formOpener} onClose={() => formHider()}>
-            <Form hide={formHider} />
-          </Modal>
-        ) : (
-          ""
-        )}
-      </Container>
-    </div>
-  );
-};
-
-export default Products;
+              </Card> */
+}
