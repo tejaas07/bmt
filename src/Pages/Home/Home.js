@@ -7,6 +7,9 @@ import ProductList from "../../Assets/Data/ProductList";
 import { Container, Stack, Button, Grid } from "@mantine/core";
 import { FaHome, FaInfo, FaPhoneAlt, FaUserCheck } from "react-icons/fa";
 import Autoplay from "embla-carousel-autoplay";
+import Pdf1 from "../../Assets/Images/PDFpg1.png";
+import Pdf2 from "../../Assets/Images/pdf2.png";
+
 // import Nav from "react-bootstrap/Nav";
 
 const Home = () => {
@@ -18,6 +21,9 @@ const Home = () => {
         sx={{ maxWidth: "100%" }}
         styles={{ zindex: -1 }}
         plugins={[autoplay.current]}
+        loop
+        dragFree
+        withControls={false}
       >
         {ProductList.map((val, i) => (
           <Carousel.Slide>
@@ -62,40 +68,13 @@ const Home = () => {
           demonstration of our system.
         </p>
       </div>
-      {/* <div
-        className="CompanyName"
-        style={{ paddingTop: "3%", fontWeight: 400 }}
-      >
-        Know More
-      </div> */}
-      {/* <div className="grid">
-        <div className="gridChild">
-          <Link href="#products">
-            <FaInfo size={40} style={{ margin: "1%" }} />
-            <Button style={{ width: "100%", height: "50px", color: "#000" }}>
-              Our Products
-            </Button>
-          </Link>
+      <div>
+        <div className="CompanyName">Our Product</div>
+        <div className="pdfImg">
+          <img src={Pdf1} alt="" />
+          <img src={Pdf2} alt="" />
         </div>
-
-        <div className="gridChild">
-          <Link href="#AboutUs">
-            <FaUserCheck size={40} style={{ margin: "1%" }} />
-            <Button style={{ width: "100%", height: "50px", color: "#000" }}>
-              Our Clients
-            </Button>
-          </Link>
-        </div>
-
-        <div className="gridChild">
-          <Link href="#contactUs">
-            <FaPhoneAlt size={40} style={{ margin: "1%" }} />
-            <Button style={{ width: "100%", height: "50px", color: "#000" }}>
-              Contact Us
-            </Button>
-          </Link>
-        </div>
-      </div> */}
+      </div>
     </div>
   );
 };

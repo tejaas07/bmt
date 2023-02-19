@@ -14,7 +14,12 @@ const NV = () => {
   const navigate = useNavigate();
   return (
     <div className="navBar-div">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-end">
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary justify-content-end"
+        style={{
+          backgroundColor: "red",
+        }}
+      >
         <div class="container-fluid">
           <img alt="logo" src={Logo} className="logoImg" style={{}} />
           <a class="navbar-brand" href="#">
@@ -65,9 +70,10 @@ const NV = () => {
                     class="nav-link active"
                     style={{ paddingTop: "1px" }}
                     aria-current="page"
-                    href="#"
                     to="/"
-                    // data-bs-toggle="collapse"
+                    onClick={() => {
+                      console.log("Hi");
+                    }}
                   >
                     Home
                   </Link>

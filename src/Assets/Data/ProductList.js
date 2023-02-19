@@ -25,9 +25,24 @@ const ProductList = [
     desc: "(Reset at Patient End)",
     img: P3,
   },
-  { productName: "Hotel Wired Call Bell System", description: "", img: P4 },
-  { productName: "Switch+Reset Button", description: "", img: P5 },
-  { productName: "Door Indicator", description: "", img: P6 },
+  {
+    productName: "Hotel Wired Call Bell System",
+    description:
+      "A hotel wired call bell is a bell used to summon an attendant or give an alarm or notice. The bell alerts and calls the attention of the attendant who hears it. They are sometimes called service bell",
+    img: P4,
+  },
+  {
+    productName: "Switch+Reset Main",
+    description:
+      "Both switch and reset button will be at patient/ customer end . Untill reset button is not pressed the indication on reception will not go Its mandatory to go at user and press the reset.",
+    img: P5,
+  },
+  {
+    productName: "Door Indicator",
+    description:
+      "Both switch and reset button will be at patient/ customer end . Untill reset button is not pressed the indication on reception will not go Its mandatory to go at user and press the reset.",
+    img: P6,
+  },
 ];
 
 export default ProductList;

@@ -23,7 +23,7 @@ const Footer = () => {
             }}
             alt=""
           />
-          Brahma Technologies
+          Brahma Technologies India
         </div>
         <div className="links">
           <span className="lk">

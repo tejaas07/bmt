@@ -47,7 +47,7 @@
   font-weight: 550;
 }
 .desc {
-  text-align: center;
+  text-align: left;
   width: 65%;
   margin: auto;
   line-break: strict;
@@ -75,6 +75,18 @@
 }
 Link {
   text-decoration: none;
+}
+.pdfImg {
+  display: flex;
+  margin: auto;
+  justify-content: space-evenly;
+  width: 80%;
+  margin-bottom: 3%;
+  /* height: 70%; */
+  /* flex-direction: column; */
+}
+.pdfImg img {
+  width: 40%;
 }
 @media (max-width: 768px) {
   .home {
