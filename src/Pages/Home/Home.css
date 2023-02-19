@@ -94,6 +94,18 @@ Link {
   }
 }
 @media (max-width: 576px) {
+  .pdfImg {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    /* width: 80%; */
+    margin-bottom: 3%;
+    /* height: 70%; */
+    flex-direction: column;
+  }
+  .pdfImg img {
+    width: 100%;
+  }
   .carl {
     flex-direction: column-reverse;
   }
